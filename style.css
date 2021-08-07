@@ -1,0 +1,72 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: sans-serif;
+}
+body {
+  background-color: black;
+  box-sizing: border-box;
+}
+.animation {
+  margin: 80px auto;
+  width: 50%;
+  background-color: white;
+  padding: 90px 0px;
+  text-align: center;
+  animation-name: animation;
+  animation-duration: 7s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+  animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0 0 20px rgb(247, 248, 246);
+
+  /*animation: animation 2s alternate infinite cubic-bezier(0.19, 1, 0.22, 1) */
+}
+.heading2 {
+  margin: 10% auto 0px;
+  width: 20%;
+  background-color: white;
+  border-style: solid;
+  padding: 50px 20px;
+  text-align: center;
+  box-shadow: 0 0 20px greenyellow;
+  border-style: outset;
+  animation-name: sample;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@media (max-width: 400px) {
+  h1,
+  h2 {
+    font-size: 15px;
+  }
+}
+@keyframes sample {
+  from {
+    border-radius: 0%;
+  }
+  to {
+    border-radius: 50%;
+    background-color: salmon;
+    color: blue;
+  }
+}
+
+@keyframes animation {
+  0% {
+    border-radius: 0%;
+  }
+  50% {
+    border-radius: 50%;
+    background-color: salmon;
+    color: blue;
+  }
+  70% {
+    background-color: blueviolet;
+  }
+  80% {
+    background-color: cyan;
+  }
+}
